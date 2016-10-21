@@ -1,0 +1,27 @@
+void creategraph(graphmatrix gm)
+{
+  int i,j,k;
+  int weight;
+  char estartv,eendv;
+  System.out.printf("enter info\n");
+  for(i=0,i<gm,vertexnum;i++)
+  {
+    System.printf("%d 's point\n");
+    gm.vertex[i]=(input.next().tochararray())[0];
+  }
+  system.out.printf("enter each point\n");
+  for(k=0;k<gm,edgenum;k++)
+  {
+    estartv=input.next(),charAt(0);
+    eendv=input.next(),charAt(0);
+    weight=input.nextInt();
+    for(i=0;estartv!=gm.vertex[i];i++);
+    for(j=0;eendv!=gm.vertex[i];j++);
+    gm.edgeweight[i][j]=weight;
+    if(gm.gtype==0)
+    {
+      gm.eghtweight[i][j]=weight;
+    }
+  }
+}
+    
