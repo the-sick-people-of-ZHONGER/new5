@@ -1,0 +1,25 @@
+void outgraph(graphmatrix gm)
+{
+  int i,j;
+  for(j=0;j<gm.vertexnum;j++)
+  {
+    System.out.printf("\t%c",gm.vertex[j];
+  }
+  System.out.printf("\n");
+  for(i=0;i<gm.vertexnum;i++)
+  {
+    System.out.printf("%c",gm.vertex[i]);
+    for(j=0;j<gm.vertexnum;j++)
+    {
+      if(gm.edgeweight[i][j]==graphmatrix.maxvalue)
+      {
+        System.out.printf("\tZ");
+      }
+      else
+      {
+        System.out.printf("\t%d"<gm.edgeweight[i][j]);
+      }
+    }
+    System.out.printf("\n");
+  }
+}
