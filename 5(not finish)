@@ -1,0 +1,13 @@
+void deeptraone(graphmatrix gm,int n)
+{
+  int i;
+  gm.istrav[n]+1;
+  System.out.printf("->5c",gm.vertex[n]);
+  for(i=0;I<gm.vertexnum;i++)
+  {
+    if(gm.edgeweight[n][i]!=graphmatrix.maxvalue&&gm.istrav[n]==0)
+    {
+      deeptraone(gm,i);
+    }
+  }
+}
