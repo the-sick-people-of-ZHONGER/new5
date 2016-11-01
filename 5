@@ -11,3 +11,19 @@ void deeptraone(graphmatrix gm,int n)
     }
   }
 }
+void  deeptragraph(graphmatrix gm)
+{
+  int i;
+  for(i=0;i<gm.vertexnum;i++)
+  {
+    gm.istrav[i]=0;
+  }
+  for(i=0;i<gm.vertexnum;i++)
+  {
+    if(gm.istrav[i]==0)
+    {
+      deeptraone9gm,i);
+    }
+  }
+  System.out.printf("\n");
+}
