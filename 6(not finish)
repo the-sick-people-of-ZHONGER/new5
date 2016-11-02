@@ -1,0 +1,16 @@
+import java.util.scanner;
+class graphmatrix
+{
+  static final int maxnum=20;
+  static final int maxvalue=65535;
+  char[]vertex=new char[maxnum];
+  int ctype;
+  int vertexnum;
+  int edgenum;
+  int[][] edgeweight=new int[maxnum][maxnum];
+  int[] istrav=new int[maxnum];
+}
+public class p2_6
+{
+  static scanner input=new scanner(system.in);
+  
