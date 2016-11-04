@@ -13,4 +13,14 @@ class graphmatrix
 public class p2_6
 {
   static scanner input=new scanner(system.in);
-  
+  static void creategrapg(graphmatrix gm)
+  {
+    int i,j,k;
+    int weight;
+    char estartv,endv;
+    System.out.printf("enter each point's info\n");
+    for((i=0;i<gm.vertexnum;i++)
+    {
+      System.out.printf("no.%d point\n");
+      gm.vertex[i]=input=(input.next().tochararray());
+    }
