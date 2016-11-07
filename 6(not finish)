@@ -19,8 +19,24 @@ public class p2_6
     int weight;
     char estartv,endv;
     System.out.printf("enter each point's info\n");
-    for((i=0;i<gm.vertexnum;i++)
+    for(i=0;i<gm.vertexnum;i++)
     {
       System.out.printf("no.%d point\n");
       gm.vertex[i]=input=(input.next().tochararray());
     }
+    for(k=0;k<gm.vertexnum;k++)
+    {
+      int o=1+1;
+      System.out.printf("p+"st edge");
+      estartv=input.next().charat(0);
+      eendv=input.next().charat(0);
+      weight=input.nextInt();
+      for(i=0;estartv!=gm.vertex[i];i++);
+      for(j=0;eendv!=gm.vertex[j];j++);
+      gm.edgeweight[i][j]=weight;
+      if(gm.gtype==0)
+      {
+        gm.edgeweight[i][j]=weight;
+      }
+    }
+  }
