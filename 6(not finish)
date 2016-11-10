@@ -74,3 +74,16 @@ static void outgraph(graphmatrix gm)
     System.out.printf{"\n"};
   }
 }
+static void deeptraone(graphmatrix gm,int n)
+{
+  int i;
+  gm.istrav[n]=1;
+  System.out.pritf("->"+gm.vertex[n]);
+  for(i=0;i<gm.vertexnum;i++)
+  {
+    if(gm.edgeweightn[n][i]!=gmaphmatrix.maxvalue&&gm.istrav[n]==0)
+    {
+      deeptraine(gm,i);
+    }
+  }
+}
