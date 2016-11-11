@@ -87,3 +87,17 @@ static void deeptraone(graphmatrix gm,int n)
     }
   }
 }
+public static void main(String[] args)
+{
+  graphmatrix gm=new graphmatrix();
+  System.out.printf("enter main\n");
+  gm.gtype=input.nextInt();
+  System.out.printf("enter point number\n");
+  gm.vertexnum=input.nextInt();
+  System.out.printf("enter edge number\n");
+  gm.edgenum=input.nextInt();
+  cleargraph(gm);
+  creategraph(gm);
+  outgraph(gm);
+  deeptragraph(gm);
+}
